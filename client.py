@@ -1,7 +1,7 @@
 import requests
 
 URL = "http://ec2-3-92-141-248.compute-1.amazonaws.com/predict"
-TEST_AUDIO_FILE_PATH = "test/left.wav"
+TEST_AUDIO_FILE_PATH = "test/down.wav"
 
 if __name__ == "__main__":
 
