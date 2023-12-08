@@ -1,7 +1,6 @@
 import os, random
 from flask import Flask, request, jsonify
 from keyword_spotting_service import Keyword_Spotting_Service
-from transformers import pipeline
 
 app = Flask(__name__)
 
@@ -25,10 +24,6 @@ def predict():
     # send back the predicted keyword in json format
     data = {"keyword": predicted_keyword}
     return jsonify(data)
-
-@app.route("/analyse", methods=["POST"])
-def analyse():    
-    return jsonify("Working")
 
 
 if __name__ == "__main__":
